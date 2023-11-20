@@ -53,8 +53,10 @@ tags:
 servers:
   - url: "https://api.rarible.org"
     description: "Production (Mainnet)"
-  - url: "https://testnet-api.rarible.org"
-    description: "Testnets"
+    variables:
+      - environment:
+          enum: ["api", "test-api"]
+          default: api
 paths:
   /v0.1/items/{itemId}:
     get:

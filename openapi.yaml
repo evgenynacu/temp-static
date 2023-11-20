@@ -54,7 +54,7 @@ servers:
   - url: "https://{environment}.rarible.org"
     variables:
       environment:
-        enum: ["api", "test-api"]
+        enum: ["api", "testnet-api"]
         default: api
 paths:
   /v0.1/items/{itemId}:

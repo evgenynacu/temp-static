@@ -52,11 +52,10 @@ tags:
   x-controller: "BalanceController"
 servers:
   - url: "https://{environment}.rarible.org"
-    description: "Production (Mainnet)"
     variables:
-      - environment:
-          enum: ["api", "test-api"]
-          default: api
+      environment:
+        enum: ["api", "test-api"]
+        default: api
 paths:
   /v0.1/items/{itemId}:
     get:

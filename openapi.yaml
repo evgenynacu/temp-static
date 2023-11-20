@@ -51,7 +51,7 @@ tags:
 - name: "User balances"
   x-controller: "BalanceController"
 servers:
-  - url: "https://api.rarible.org"
+  - url: "https://{environment}.rarible.org"
     description: "Production (Mainnet)"
     variables:
       - environment:
